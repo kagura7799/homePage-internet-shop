@@ -1,0 +1,91 @@
+
+.App {
+  padding-bottom: 300px;
+  border-radius: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.App2 {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  right: 1px;
+  left: 1px;
+  top: 1290px;
+}
+
+.carousel-container, .carousel-container2 {
+  background-color: rgba(179, 179, 179, 0.564);
+}
+
+
+.slick-track {
+  padding-top: 30px;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+
+  height: 300px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.App2 .card-top h1 {
+  font-size: 0.9rem;
+  margin-left: 190px;
+}
+
+.card-top > img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.card-bottom {
+  margin: 10px 20px;
+}
+
+.category {
+  position: relative;
+}
+.category::before {
+  content: '';
+  background: rgb(255, 61, 61);
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+
+@media (max-width: 270px) {
+  .carousel-container, .carousel-container2 {
+    padding-top: 120px;
+  }
+
+  .App, .App2 {
+    width: 70%;
+  }
+
+  .card-top > img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+
+  }
+
+  
+}
