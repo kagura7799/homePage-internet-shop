@@ -24,38 +24,32 @@ import { Carousel } from '../carousel/Carousel';
 import { Carousel2 } from '../carousel/Carousel2';
 
 export function HomePage() {
-  // Инициализируем состояние для текущей темы
   const [initTheme, setInitTheme] = useState(localStorage.getItem('theme') || 'whiteTheme');
   const [logo, setLogo] = useState(initTheme === 'whiteTheme')
 
   const [isOpen, setIsOpen] = useState(false);
 
-  // Для отображения тёмной/светлой темы
   const addThemeClassBgBody = initTheme
   const addNameTheme = initTheme === 'whiteTheme' ? 'Темная тема' : 'Светлая тема'
 
-   // Обработчик смены темы
    const toggleTheme = () => {
      setLogo(!logo)
      const newTheme = initTheme === 'whiteTheme' ? 'darkTheme' : 'whiteTheme';
      setInitTheme(newTheme);
-     localStorage.setItem('theme', newTheme); // Сохраняем тему в localStorage
+     localStorage.setItem('theme', newTheme); 
      setLogo(newTheme === 'darkTheme')
     }
 
     useEffect(() => {
       const savedTheme = localStorage.getItem('theme');
-
+ 
       if (savedTheme) {
         setInitTheme(savedTheme);
         setLogo(savedTheme === 'darkTheme')
       }
     }, []);
 
-
-
     const logoImg = logo ? sunLogo : moonLogo
-
 
     return ( 
         <div className={addThemeClassBgBody}>
@@ -198,12 +192,7 @@ export function HomePage() {
                 <p className='hello-text-p'>Мы имеем большой каталог электронной техники и не только.</p>
               </div>
             </div>
-            {/* < src={interier} alt="interier" width={700} className='interier' /> */}
             
-
-
-           {/*  <img src={logoImage} alt="logo" width='150' className='logo-2' />
-            <p className="describe">Магазин электронной техники <span className="partners">Partner's</span> в Костанае – ваш надежный партнер для широкого ассортимента электронной техники и инновационных устройств. </p> */}
           </div>
 
           <h2 className='desc-flickity'>Топ наших товаров:</h2>

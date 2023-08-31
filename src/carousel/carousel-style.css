@@ -17,7 +17,8 @@
 }
 
 .carousel-container, .carousel-container2 {
-  background-color: rgba(179, 179, 179, 0.564);
+  border-radius: 20px;
+  background-color: rgba(179, 179, 179, 0.26);
 }
 
 
