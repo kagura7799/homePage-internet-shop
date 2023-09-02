@@ -22,6 +22,7 @@ import backetPng from '../images/shopping-online.png'
 
 import { Carousel } from '../carousel/Carousel';
 import { Carousel2 } from '../carousel/Carousel2';
+import { Header } from '../components/Header';
 
 export function HomePage() {
   const [initTheme, setInitTheme] = useState(localStorage.getItem('theme') || 'whiteTheme');
@@ -47,14 +48,15 @@ export function HomePage() {
         setInitTheme(savedTheme);
         setLogo(savedTheme === 'darkTheme')
       }
-    }, []);
+    }, [initTheme]);
 
     const logoImg = logo ? sunLogo : moonLogo
 
     return ( 
         <div className={addThemeClassBgBody}>
-          
-      <header>
+
+      <Header />          
+      {/* <header>
 
         <div className="flex-head">
           <div className="navbar-btn">
@@ -114,11 +116,7 @@ export function HomePage() {
             <a href="google.com" className='flex-nav-png'>
               <p className='btnHamburg'>Контакты</p>
             </a>
-
             
-
-            
-
           </ul>
       </div>
           <a href="google.com">
@@ -134,13 +132,13 @@ export function HomePage() {
 
           <img className='logoTh' src={logoImg} alt="logoTh" /> 
           <button id="changeTheme-button" onClick={toggleTheme}>{addNameTheme}</button>
-
+          
         </div>
-      </header>
-
+      </header> */}
+      
       <section className='bodyContent'>
         <div className="catalog-flex">
-          <div className='catalog'>
+          <div className='catalog'> 
             <h3 className='h3-catalog'>Каталог</h3>
 
             <button className="btn-catalog">

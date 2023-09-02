@@ -5,7 +5,7 @@ import HamburgerMenu from 'react-hamburger-menu';
 
 import '../styles/style.css'
 
-import logoImage from '../images/logo-partners.png'; 
+import logoImage from '../images/logo-partners.png';
 import moonLogo from '../images/half-moon.png';
 import sunLogo from '../images/contrast.png';
 import heartPng from '../images/heart.png'
@@ -17,14 +17,14 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   
   const [initTheme, setInitTheme] = useState(localStorage.getItem('theme') || 'whiteTheme');
-  const [logo, setLogo] = useState(initTheme === 'whiteTheme')
+  const [logo, setLogo] = useState(initTheme === 'whiteTheme');
 
 
   const addThemeClassBgBody = initTheme
-  const addNameTheme = initTheme === 'whiteTheme' ? 'Темная тема' : 'Светлая тема'
+  const addNameTheme = initTheme === 'whiteTheme' ? 'Темная тема' : 'Светлая тема';
 
-   const toggleTheme = () => {
-     setLogo(!logo)
+  const toggleTheme = () => {
+    setLogo(!logo)
      const newTheme = initTheme === 'whiteTheme' ? 'darkTheme' : 'whiteTheme';
      setInitTheme(newTheme);
      localStorage.setItem('theme', newTheme); 
