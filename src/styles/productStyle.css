@@ -1,0 +1,129 @@
+.container-product {
+    border-radius: 15px;
+    margin: 65px auto;
+    width: 75%;
+}
+
+.darkTheme {
+    
+}
+
+.whiteTheme {
+    .line-product {
+        border-color: black;
+        background: black;
+    }
+
+    .character-product h1, .title-product-card, .body-describe-product p {
+        color: black;
+    }
+
+    .price-product {
+        color: #128136;
+    }
+
+    .right-panel-product {
+        background: #e8e8e8;
+    }
+}
+
+.line-product {
+    background-color: white;
+    height: 1px; 
+    width: 100%; 
+    border: none; 
+}
+
+.price-product {
+    border-radius: 10px;
+    background-color: #10c44c1d;
+    color: #10c44c;
+    font-size: 25px;
+}
+
+.content-product-card {
+    display: flex;
+}
+
+.character-product h1 {
+    color: white;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.character-product {
+    margin-left: 80px;
+    color: white;
+}
+
+.body-describe-product {
+    text-align: center;
+}
+
+.body-describe-product p {
+    color: gainsboro;
+    margin-bottom: 5px;
+}
+
+.title-product-card {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.right-panel-product {
+    background-color: rgba(81, 81, 88, 0.527);
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 130px;
+    height: 150px;
+    margin-top: 20px;
+    padding: 90px;
+    padding-top: 30px;
+    padding-bottom: 150px;
+}
+
+.placeholder-product {
+    color: rgba(0, 0, 0, 0.692);
+    margin-bottom: 10px;
+}
+
+.buy-btn-product {
+    color: #e3d8d8;
+    font-size: 17px;
+    background-color: #128136;
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-btn-product:hover {
+    background-color: #23ab51;
+}
+
+.basket-btn-product {
+    margin-top: 25px;
+    color: black;
+    display: flex;
+    font-size: 20px;
+    background-color: rgba(128, 128, 128, 0.38);
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.basket-btn-product:hover {
+    background-color: #b2a944;
+}
+
+.basket-btn-product span {
+    margin: auto 0;
+    margin-left: 5px;
+}
+
+.buy-btn-product {
+    margin-top: 50px;
+}

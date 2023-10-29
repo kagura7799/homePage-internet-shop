@@ -1,0 +1,144 @@
+
+.App {
+  border-radius: 20px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.App2 {
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  right: 1px;
+  left: 1px;
+  top: 1370px;
+}
+
+.card, .card2 {
+  border: 1px solid rgb(120, 120, 120);
+}
+
+.carousel-container, .carousel-container2 {
+  border-radius: 20px;
+}
+
+.card {
+  background: rgba(128, 128, 128, 0);
+  border: none;
+}
+
+.slick-track {
+  padding-top: 30px;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+
+.buy-btn {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  font-size: 18px;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  padding: 6px;
+  transition: all 0.5s ease;
+}
+
+.buy-btn:hover {
+  background: aliceblue;
+  color: black;
+}
+
+.buy-btn2 {
+  background-color: rgb(216, 216, 216);
+  cursor: pointer;
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 6px;
+  margin-left: 181px;
+}
+
+.buy-btn2:hover {
+  background-color: rgb(219, 219, 219);
+}
+
+.buy-btn2:active {
+  background-color: #c1c1c1;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+
+  height: 300px;
+  color: #fff;
+  cursor: pointer;
+  padding-bottom: 100px;
+}
+
+.App2 .card-top h1 {
+  font-size: 0.9rem;
+  margin-left: 190px;
+}
+
+.App .card-top h1 {
+  font-size: 0.9rem;
+}
+
+.card-top > img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.card-bottom {
+  margin: 10px 20px;
+  text-align: center;
+}
+
+.category {
+  position: relative;
+}
+.category::before {
+  content: '';
+  background: rgb(255, 61, 61);
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+@media (max-width: 800px) {
+  .buy-btn2 {
+    margin-left: 120px;
+  }
+}
+
+
+@media (max-width: 270px) {
+  .carousel-container, .carousel-container2 {
+    padding-top: 120px;
+  }
+
+  .App, .App2 {
+    width: 70%;
+  }
+
+  .card-top > img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+
+  }
+
+  
+}
